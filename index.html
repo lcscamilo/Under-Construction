@@ -1,28 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SW Imóveis</title>
 
   <link rel="stylesheet" href="public/css/index.css">
+  <script src="public/js/script.js" defer></script>
+  <link rel="icon" href="public/assets/logo-swcoporate.svg" type="image/svg+xml">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <nav>
-      SW Imóveis
-    </nav>
-  </header>
-  <main>
+  <div class="bg-overlay-blue">
+    <header class="">
+      <img src="public/assets/logo-swimoveis.svg" alt="">
+      <nav>
+        <a href="#">SW Corporate</a>
+        <a href="#">Contato</a>
+      </nav>
+    </header>
 
-  </main>
-  <aside>
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
+    <main class="container flex">
+      <span>Nosso site será lançado</span>
+      <h2>EM <br> BREVE</h2>
+      <svg viewBox="0 0 280 280">
+        <!-- Marcas -->
+        <g id="ticks" transform="translate(140 140)"></g>
+
+        <!-- Ponteiro de minutos -->
+        <g id="minGroup" transform="rotate(0 140 140)">
+          <line class="hand" x1="140" y1="140" x2="140" y2="65" />
+        </g>
+
+        <!-- Ponteiro de hora -->
+        <g id="" transform="rotate(240 140 140)">
+          <line class="hand" x1="140" y1="140" x2="140" y2="90" />
+        </g>
+        <!-- Miolo -->
+        <!-- <circle cx="140" cy="140" r="1.5" fill="#fff" /> -->
+      </svg>
+      <h1>SW Imóveis</h1>
+      <a href="#contact" class="scroll desktop-only">
+        <svg viewBox="0 -19.04 75.804 75.804" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <g id="Group_67" data-name="Group 67" transform="translate(-798.203 -587.815)">
+              <path id="Path_59" data-name="Path 59"
+                d="M798.2,589.314a1.5,1.5,0,0,1,2.561-1.06l33.56,33.556a2.528,2.528,0,0,0,3.564,0l33.558-33.556a1.5,1.5,0,1,1,2.121,2.121l-33.558,33.557a5.53,5.53,0,0,1-7.807,0l-33.56-33.557A1.5,1.5,0,0,1,798.2,589.314Z"
+                fill="#ffffff"></path>
+            </g>
+          </g>
+        </svg>
+      </a>
+    </main>
+  </div>
+
+
+  <div class="bg-overlay-white">
+    <section id="contact">
+      <h2>Sobre o grupo SW</h2>
+      <h3>SW Corporate</h3>
+      <span>+55 (011) 4935-9938</span>
+      <span>+55 (011) 2677-3904</span>
+    </section>
+
+    <footer>
+      <span>&copy; 2025</span>
+      <span>SW Imóveis</span>
+      <span>Av. Eng. Luís Carlos Berrini, 550 | 4º andar | conjunto 42 | CEP: 04571-000 | São Paulo | SP</span>
+      <span>CRECI: 30.085-J</span>
+    </footer>
+  </div>
+
+
+  <aside class="desktop-only flex">
+    <a href=""><img src="public/assets/icons/linkedin-50.svg" alt=""></a>
+    <a href=""><img src="public/assets/icons/instagram-50.svg" alt=""></a>
+    <a href=""><img src="public/assets/icons/youtube-50.svg" alt=""></a>
+
   </aside>
-  <footer>
-
-  </footer>
 </body>
 </html>

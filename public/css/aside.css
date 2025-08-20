@@ -1,0 +1,14 @@
+aside {
+  position: absolute;
+  right: 2rem;
+  top: calc(50%);
+
+
+  flex-direction: column;
+  align-items: end;
+
+  & img {
+    width: 1.4rem;
+    filter: invert();
+  }
+}

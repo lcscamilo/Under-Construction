@@ -1,0 +1,34 @@
+.container {
+  --max-width: 375px;
+  width: min(var(--max-width), 100% - var(--px-lg) * 2);
+  /* border: 2px solid white; */
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+
+.desktop-only {
+  display: none;
+}
+
+
+
+@media (min-width: 48em) {
+  & .container {
+    --max-width: 48em;
+  }
+  
+  & .desktop-only {
+    display: initial;
+  }
+}
+
+@media (min-width: 80em) {
+  & .container {
+    --max-width: 80em;
+  }
+  
+}
