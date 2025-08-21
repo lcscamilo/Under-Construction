@@ -10,5 +10,10 @@ aside {
   & img {
     width: 1.4rem;
     filter: invert();
+    transition: scale 100ms ease;
+
+    &:hover {
+      scale: 1.25;
+    }
   }
 }

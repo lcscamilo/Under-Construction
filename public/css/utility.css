@@ -22,7 +22,7 @@
   }
   
   & .desktop-only {
-    display: initial;
+    display: flex;
   }
 }
 

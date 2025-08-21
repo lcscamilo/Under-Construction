@@ -2,17 +2,44 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1rem;
+  padding: 1rem var(--px-lg);
 
   & nav {
     display: flex;
     gap: 1rem;
     font-weight: 500;
 
-    a:hover {
-      color: var(--brand-color-secondary);
-      text-decoration: underline;
+    & a {
+      position: relative;
+      width: fit-content;
+      /* width: ; */
+
+      &:hover::after {
+        opacity: 1;
+        transform: scaleX(100%);
+      }
     }
+
+    & a::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: var(--brand-color-secondary);
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+
+      transform: scaleX(0);
+      transition: transform 200ms linear;
+
+      /* &:hover {
+        color: var(--brand-color-secondary);
+        text-decoration: underline;
+      } */
+    }
+
   }
 
   & img {
